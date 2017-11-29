@@ -1,0 +1,42 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+  <h1>
+    {{ title }}
+  </h1>
+
+</div>
+
+<table>
+    <tbody>
+      <tr><tr>
+        <td colspan = "4">
+            {{resultatString}}
+        </td>
+      </tr><tr>
+      <tr>
+        <td (click)="chiffreAdd(1)">{{chiffre.chiffre1}}</td>
+        <td (click)="chiffreAdd(2)">{{chiffre.chiffre2}}</td>
+        <td (click)="chiffreAdd(3)">{{chiffre.chiffre3}}</td>
+        <td (click)="operateurAdd('/')">{{operateur.div}}</td>
+      </tr>
+      <tr>
+        <td (click)="chiffreAdd(4)">{{chiffre.chiffre4}}</td>
+        <td (click)="chiffreAdd(5)">{{chiffre.chiffre5}}</td>
+        <td (click)="chiffreAdd(6)">{{chiffre.chiffre6}}</td>
+        <td (click)="operateurAdd('*')">{{operateur.mult}}</td>
+      </tr>
+      <tr>
+        <td (click)="chiffreAdd(7)">{{chiffre.chiffre7}}</td>
+        <td (click)="chiffreAdd(8)">{{chiffre.chiffre8}}</td>
+        <td (click)="chiffreAdd(9)">{{chiffre.chiffre9}}</td>
+        <td (click)="operateurAdd('+')">{{operateur.plus}}</td>
+      </tr>
+      <tr>
+        <td (click)="chiffreAdd(0)">{{chiffre.chiffre0}}</td>
+        <td (click)="egal('=')">{{operateur.egal}}</td>
+        <td (click)="annule()">{{operateur.cancel}}</td>
+        <td (click)="operateurAdd('-')">{{operateur.moins}}</td>
+      </tr>
+    </tbody>
+</table>
+
